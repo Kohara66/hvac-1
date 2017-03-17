@@ -25,7 +25,7 @@ public class ServiceCallManager {
     String[] addCallOptions = {
             "1. Add service call for furnace",
             "2. Add service call for AC unit",
-           // "3. Add service call for Waterheater",
+            "3. Add service call for Waterheater",
             "3. Return to main menu" };
 
 
