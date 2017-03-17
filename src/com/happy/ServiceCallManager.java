@@ -1,4 +1,4 @@
-package com.company;
+package com.happy;
 
 import java.util.*;
 
@@ -9,6 +9,7 @@ import java.util.*;
  */
 
 public class ServiceCallManager {
+
 
     private LinkedList<ServiceCall> todayServiceCalls;
     private LinkedList<ServiceCall> resolvedServiceCalls;
@@ -24,6 +25,7 @@ public class ServiceCallManager {
     String[] addCallOptions = {
             "1. Add service call for furnace",
             "2. Add service call for AC unit",
+            "3. Add service call for Waterheater",
             "3. Return to main menu" };
 
 
@@ -118,6 +120,14 @@ public class ServiceCallManager {
 
         System.out.println("Added the following furnace to list of calls:\n" + f);
     }
+   /* private void setAddWaterHeaterServiceCall(){
+        String address = Input.getStringInput("Enter address of waterheater");
+        String problem = Input.getStringInput("Enter description of problem");
+        int waterHeaterAge = Input.getPositiveIntInput("Enter age of waterheater");
+        Waterheater wh = new Waterheater( waterHeaterAge,sericeAddress,problemDescription,Date);
+        todayServiceCalls.add(wh);
+        System.out.println("Added the following waterheater to list of calls:\n" + wh);*/
+  //  }
 
 
     /* Get data about AC unit, create CentralAC object, add to end of queue of ServiceCalls */

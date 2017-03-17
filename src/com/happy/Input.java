@@ -1,4 +1,4 @@
-package com.company;
+package com.happy;
 
 import java.util.Scanner;
 import java.util.TreeMap;
