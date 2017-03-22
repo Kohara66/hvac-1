@@ -9,7 +9,7 @@ import java.util.Date;
 public class Waterheater extends ServiceCall {
     int waterHeaterAge;
     double cityFee = 20;
-    public Waterheater(String serviceAddress, String problemDescription, Date date, int waterHeaterAge) {
+     Waterheater(String serviceAddress, String problemDescription, Date date, int waterHeaterAge) {
         super(serviceAddress, problemDescription, date);
         this.waterHeaterAge = waterHeaterAge;
     }
