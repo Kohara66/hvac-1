@@ -117,7 +117,7 @@ public class ServiceCallManager {
 
         String address = Input.getStringInput("Enter address of furnace");
         String problem = Input.getStringInput("Enter description of problem");
-        Furnace.FurnaceType type = Input.getFurnaceType();
+        int type = Input.getFurnaceType();
         Furnace f = new Furnace(address, problem, new Date(), type);
         todayServiceCalls.add(f);
 

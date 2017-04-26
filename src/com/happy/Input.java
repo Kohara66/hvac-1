@@ -82,14 +82,14 @@ public class Input {
 
 
     /* Request a valid type from the furnace types allowed, based on the FurnaceTypes enum */
-    public static Furnace.FurnaceType getFurnaceType() {
+    public static int getFurnaceType() {
 
         //Build a TreeMap - a HashMap with sorted keys - of the valid types
-        TreeMap<Integer, Furnace.FurnaceType> furnaceTypes = new TreeMap<Integer, Furnace.FurnaceType>();
+        TreeMap<Integer, Furnace.FurnaceTypeManager> furnaceTypes = new TreeMap<Integer, Furnace.FurnaceTypeManager>();
 
         int code = 1;
-        for (Furnace.FurnaceType type : Furnace.FurnaceType.values()) {
-            furnaceTypes.put(code++, type);
+        for (Furnace.FurnaceTypeManager typeManager : furnaceTypes.values()) {
+            furnaceTypes.put(code++, typeManager);
         }
 
         int totalTypes = code - 1;   //If there are 3 types, then code will be 4 at the end of the loop.
@@ -111,7 +111,7 @@ public class Input {
             }
 
             else {
-                return furnaceTypes.get(typeCodeInt);
+                return typeCodeInt;
             }
         }
     }
